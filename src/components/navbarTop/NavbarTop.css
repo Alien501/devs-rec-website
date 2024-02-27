@@ -124,6 +124,7 @@ a.nav-menu::after {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 95;
     background-color: var(--color-shadow);
     animation: fadeIn .4s ease-in-out 0s 1  ;
 }

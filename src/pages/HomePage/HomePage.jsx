@@ -7,6 +7,8 @@ import BlogCardHome from "../../components/BlogCardHome/BlogCardHome";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import PodcastCard from "../../components/PodcastCard/PodcastCard";
 import VMA from "../../components/VMA/VMA";
+import FAQ from "../../components/FAQ/FAQ";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 export default function HomePage() {
     return(
@@ -122,6 +124,25 @@ export default function HomePage() {
 
             <BorderImage />
 
+            <FAQ />
+
+            <section style={
+                {
+                    marginTop: '10px'
+                }
+            } className="home-podcast-container">
+                <div className="section-head">
+                    <h1>
+                        👋 Reach-out Us 👋
+                    </h1>
+                </div>
+                <div className="section-explainer">
+                    Still have <span>Doubts? Get to us</span> via this form
+                </div>
+                <div className="podcast-home-container">
+                    <ContactForm />
+                </div>
+            </section>
 
         </div>
     )

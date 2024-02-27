@@ -12,6 +12,8 @@ import Events from './pages/Events/Events';
 import Contest from './pages/Contest/Contest';
 import Gallery from './pages/Gallery/Gallery';
 import Team from './pages/Team/Team';
+import FAB from './components/FAB/FAB';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/team' element={<Team />}/>
       </Routes>
+
+      <FAB />
+      <Footer />
     </>
   )
 }
