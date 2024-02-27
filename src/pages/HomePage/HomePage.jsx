@@ -6,6 +6,7 @@ import BorderImage from "../../components/BorderImage/BorderImage";
 import BlogCardHome from "../../components/BlogCardHome/BlogCardHome";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import PodcastCard from "../../components/PodcastCard/PodcastCard";
+import VMA from "../../components/VMA/VMA";
 
 export default function HomePage() {
     return(
@@ -93,6 +94,34 @@ export default function HomePage() {
             </section>
 
             <BorderImage />
+
+            <section className="about-container">
+                <div className="section-head">
+                    <h1>
+                        ✨ About DEVS ✨
+                    </h1>
+                </div>
+                <div className="section-explainer">
+                    <span>About us</span>
+                </div>
+                <VMA />
+                <div style={
+                    {
+                        margin: '10px auto',
+                        maxWidth: '90%',
+                        minWidth: '50%',
+                        padding: '5px'
+                    }
+                } className="section-explainer">
+                    We also organize various <span>contests and events </span> frequently. Check them out by clicking the button below!
+                </div>
+                <LinkButton btnTitle={'Contests'} />
+                <LinkButton btnTitle={'Events'} />
+
+            </section>
+
+            <BorderImage />
+
 
         </div>
     )

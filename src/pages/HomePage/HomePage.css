@@ -53,3 +53,8 @@
     color: var(--color-red);
     border-color: var(--color-red);
 }
+
+/* About Section */
+.about-container .link-button{
+    margin: 10px auto;
+}
