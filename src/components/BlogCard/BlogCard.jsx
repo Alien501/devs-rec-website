@@ -17,7 +17,7 @@ export default function BlogCard({blogImage, blogTag, blogTitle, blogId}) {
             <div className="blog-title-container">
                 {blogTitle}
             </div>
-            <LinkButton btnTitle={'Read'}/>
+            <LinkButton btnTo={'/read/blog'} btnTitle={'Read'}/>
         </div>
     )
 }

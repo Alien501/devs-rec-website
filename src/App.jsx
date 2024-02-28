@@ -14,6 +14,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Team from './pages/Team/Team';
 import FAB from './components/FAB/FAB';
 import Footer from './components/Footer/Footer';
+import BlogView from './components/BlogView/BlogView';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/blog' element={<Blogs />}/>
+        <Route path='/read/blog' element={<BlogView />}/>
         <Route path='/podcast' element={<Podcast />}/>
         <Route path='/events' element={<Events />} />
         <Route path='/contest' element={<Contest />}/>
