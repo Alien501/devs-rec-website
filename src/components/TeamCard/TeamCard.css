@@ -1,0 +1,50 @@
+.team-mem-card-container {
+    width: 295px;
+    height: max-content;
+    background-color: var(--color-violet);
+    overflow: hidden;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    border: 5px solid var(--color-black);
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-mem-image-container {
+    width: 150px;
+    margin: 10px auto;
+}
+
+.team-img {
+    width: 100%;
+    border: 2px solid var(--color-black);
+    border-radius: 50%;
+    /* border-radius: 50%; */
+}
+
+.team-mem-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.team-mem-social-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-mem-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.team-mem-role {
+    font-size: .9rem;
+    font-weight: 400;
+}

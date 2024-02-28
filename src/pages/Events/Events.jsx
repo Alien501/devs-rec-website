@@ -14,7 +14,7 @@ export default function Events() {
         <section className="contest-container">
         <div className="section-head">
             <h1>
-                🎁 Contests 🎁
+                🎁 Events 🎁
             </h1>
         </div>
         <div className="section-explainer">
