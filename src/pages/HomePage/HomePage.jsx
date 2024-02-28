@@ -77,7 +77,7 @@ export default function HomePage() {
                     <BlogCardHome blogTitle={'AI: FRIEND OR FOE? DEBUNKING THE MYTH OF ARTIFICIAL INTELLIGENCE AS A THREAT TO SOCIETY?'} blogDomain={'AI'}/>
 
                 </div>
-                <LinkButton btnTitle={'View More'} />
+                <LinkButton btnTo={'/blog'} btnTitle={'View More'} />
             </section>
 
             <BorderImage />
@@ -96,7 +96,7 @@ export default function HomePage() {
                     <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/7juTmneZuN82wVf53dYCiB?utm_source=generator'} />
                     <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/3rwI3Y8YvIt2YxepmuCxD7?utm_source=generator'} />
                 </div>
-                <LinkButton btnTitle={'Listen More'} />
+                <LinkButton btnTo={'/podcast'} btnTitle={'Listen More'} />
             </section>
 
             <BorderImage />
@@ -121,8 +121,8 @@ export default function HomePage() {
                 } className="section-explainer">
                     We also organize various <span>contests and events </span> frequently. Check them out by clicking the button below!
                 </div>
-                <LinkButton btnTitle={'Contests'} />
-                <LinkButton btnTitle={'Events'} />
+                <LinkButton btnTo={'/contest'} btnTitle={'Contests'} />
+                <LinkButton btnTo={'/events'} btnTitle={'Events'} />
 
             </section>
 
