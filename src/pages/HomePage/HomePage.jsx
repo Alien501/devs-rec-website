@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import './HomePage.css';
 import AnnouncementCard from "../../components/AnnouncementCard/AnnouncementCard";
@@ -11,6 +11,10 @@ import FAQ from "../../components/FAQ/FAQ";
 import ContactForm from "../../components/ContactForm/ContactForm";
 
 export default function HomePage() {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return(
         <div className="home-page-container">
             <section className="announcement-container">
