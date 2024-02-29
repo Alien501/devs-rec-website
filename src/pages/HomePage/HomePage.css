@@ -4,6 +4,35 @@
     user-select: none;
 }
 
+/* Hero Section */
+.home-hero-container {
+    width: 90%;
+    background-color: var(--color-black);
+    margin: 5px auto;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.home-hero-container h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+}
+
+.hero-video-container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-video-container video {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
 /* Announcement section */
 .announcement-container {
     width: 100%;

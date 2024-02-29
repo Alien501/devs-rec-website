@@ -9,6 +9,7 @@ import PodcastCard from "../../components/PodcastCard/PodcastCard";
 import VMA from "../../components/VMA/VMA";
 import FAQ from "../../components/FAQ/FAQ";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import HeroVideoCard from "../../components/HeroVideoCard/HeroVideoCard";
 
 export default function HomePage() {
     useEffect(() => {
@@ -17,6 +18,13 @@ export default function HomePage() {
 
     return(
         <div className="home-page-container">
+
+            <section className="home-hero-container">
+                <div className="hero-video-container">
+                    <HeroVideoCard />
+                </div>
+            </section>
+
             <section className="announcement-container">
                 <div className="section-head">
                     <h1>
