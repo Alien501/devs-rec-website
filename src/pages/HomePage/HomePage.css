@@ -13,6 +13,8 @@
     text-align: center;
     color: #fff;
     overflow: hidden;
+    border: 5px solid var(--color-violet);
+    box-shadow: 5px 5px 0px var(--color-black);
 }
 
 .home-hero-container h1 {
@@ -37,6 +39,7 @@
 .announcement-container {
     width: 100%;
     height: max-content;
+    margin-top: 40px;
 }
 
 .section-head {

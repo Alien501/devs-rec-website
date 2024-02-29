@@ -10,15 +10,14 @@ import VMA from "../../components/VMA/VMA";
 import FAQ from "../../components/FAQ/FAQ";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import HeroVideoCard from "../../components/HeroVideoCard/HeroVideoCard";
+import { ANNOUNCEMENTS, BLOGS, PODCASTS } from "../../data";
 
 export default function HomePage() {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
-
     return(
         <div className="home-page-container">
-
             <section className="home-hero-container">
                 <div className="hero-video-container">
                     <HeroVideoCard />
@@ -35,36 +34,9 @@ export default function HomePage() {
                     See <span>latest update</span> in club
                 </div>
                 <div className="ann-card-container">
-                    <AnnouncementCard 
-                        annTitle={'Test 1'}
-                        annBrief={'Testing this new feature'}
-                        annLink={''}
-                    />
-                    <AnnouncementCard 
-                        annTitle={'Test 2'}
-                        annBrief={'Testing this new feature Testing this new feature Testing this new feature Testing this new feature'}
-                        annLink={''}
-                    />
-                    <AnnouncementCard 
-                        annTitle={'Test 3'}
-                        annBrief={'Testing this new feature'}
-                        annLink={''}
-                    />
-                    <AnnouncementCard 
-                        annTitle={'Test 4'}
-                        annBrief={'Testing this new feature'}
-                        annLink={''}
-                    />
-                    <AnnouncementCard 
-                        annTitle={'Test 5'}
-                        annBrief={'Testing this new feature Testing this new feature Testing this new feature Testing this new feature'}
-                        annLink={''}
-                    />
-                    <AnnouncementCard 
-                        annTitle={'Test 6'}
-                        annBrief={'Testing this new feature'}
-                        annLink={''}
-                    />
+                    {
+                        ANNOUNCEMENTS.map((curr, key) => <AnnouncementCard key={key} annBrief={curr.announcementContent} annLink={curr.announcementLink} annTitle={curr.announcementTitle} />)
+                    }
                 </div>
             </section>
 
@@ -80,10 +52,9 @@ export default function HomePage() {
                     Have a look at our <span>community curated</span> blogs
                 </div>
                 <div className="blog-home-container">
-                    <BlogCardHome blogTitle={'WHY AI IS NOT A THREAT TO HUMAN SOCIETY AND THE WORLD AT LARGE??'} blogDomain={'AI'}/>
-                    <BlogCardHome blogTitle={'HOW TO BECOME A WEB DEV ?'} blogDomain={'Web Dev'}/>
-                    <BlogCardHome blogTitle={'AI: FRIEND OR FOE? DEBUNKING THE MYTH OF ARTIFICIAL INTELLIGENCE AS A THREAT TO SOCIETY?'} blogDomain={'AI'}/>
-
+                    {
+                        BLOGS.slice(0, 3).map((curr, key) => <BlogCardHome key={key} blogDomain={curr.blogTag} blogTitle={curr.blogTitle} blogId={curr.blogId} />)
+                    }
                 </div>
                 <LinkButton btnTo={'/blog'} btnTitle={'View More'} />
             </section>
@@ -100,9 +71,9 @@ export default function HomePage() {
                     Listen to the <span>community speaking</span> things related to tech
                 </div>
                 <div className="podcast-home-container">
-                    <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/185K2NcNPQ04aTS4T5jM7t?utm_source=generator'} />
-                    <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/7juTmneZuN82wVf53dYCiB?utm_source=generator'} />
-                    <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/3rwI3Y8YvIt2YxepmuCxD7?utm_source=generator'} />
+                    {
+                        PODCASTS.slice(0, 3).map((curr, key) => <PodcastCard key={key} podcastEmbedLink={curr.podcastLink} />)
+                    }
                 </div>
                 <LinkButton btnTo={'/podcast'} btnTitle={'Listen More'} />
             </section>

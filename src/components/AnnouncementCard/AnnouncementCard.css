@@ -10,6 +10,7 @@
     grid-template-rows: 1fr 2fr 1fr;
     transition: .3s ease;
     border: 1px solid transparent;
+    text-align: center;
 }
 
 .announcement-card-container:hover {
@@ -52,6 +53,7 @@
 }
 
 .ann-link:hover {
-    background-color: transparent;
+    background-color: var(--color-black);
     border-color: var(--color-orange);
+    color: #FFF;
 }

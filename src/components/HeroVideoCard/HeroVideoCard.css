@@ -1,6 +1,7 @@
 .video-container {
     position: relative;
     max-height: 500px;
+    transition: all .3s ease;
 }
 
 .video-overlay-container {
@@ -22,16 +23,17 @@
 .overlay-name {
     position: absolute;
     bottom: 10px;
-    left: 20px;
-    font-size: 1rem;
-    font-weight: 500;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 700;
 }
 
 .overlay-button {
     text-decoration: none;
     display: block;
-    right: 20px;
-    bottom: 10px;
+    left: 50%;
+    top: 50%;
     position: absolute;
     background-color: var(--color-violet);
     color: #fff;
@@ -40,6 +42,7 @@
     padding: 5px 20px;
     border-radius: 25px;
     transition: .3s ease;
+    transform: translate(-50%, -50%);
 }
 
 .overlay-button:hover {

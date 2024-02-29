@@ -2,8 +2,8 @@ import React, {useEffect} from "react";
 
 import ContestCard from "../../components/ContestCard/ContestCard";
 
-import img1 from '../../assets/tech-xplore.jpg'
-import img2 from '../../assets/webinar-1.jpg'
+
+import { EVENTS } from "../../data";
 
 export default function Events() {
     useEffect(() => {
@@ -21,8 +21,9 @@ export default function Events() {
             Join and <span>learn</span> things in interactive way
         </div>
         <div className="contest-cards-container">
-            <ContestCard btnName={'Register Now'} contestPoster={img1} contestRegistrationLink={'#'}/>
-            <ContestCard btnName={'Register Now'} contestPoster={img2} contestRegistrationLink={'https://go.d3v.gg/game-dev-webinar'}/>
+        {
+            EVENTS.map((curr, key) => <ContestCard key={key} contestPoster={curr.eventImage} contestRegistrationLink={curr.eventLink} btnName={'Register Now'} />)
+        }
         </div>
     </section>
     )

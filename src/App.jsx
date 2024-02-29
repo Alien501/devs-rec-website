@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/blog' element={<Blogs />}/>
-        <Route path='/read/blog' element={<BlogView />}/>
+        <Route path='/read/blog/:b' element={<BlogView />}/>
         <Route path='/podcast' element={<Podcast />}/>
         <Route path='/events' element={<Events />} />
         <Route path='/contest' element={<Contest />}/>

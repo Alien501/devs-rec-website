@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import './Contest.css';
 import ContestCard from "../../components/ContestCard/ContestCard";
 
-import webImg from '../../assets/web-dev-contest.jpg'
+import { CONTESTS } from "../../data";
 
 export default function Contest() {
     useEffect(() => {
@@ -21,8 +21,9 @@ export default function Contest() {
             Compete with the <span>community</span> for fun
         </div>
         <div className="contest-cards-container">
-            <ContestCard btnName={'Participate'} contestPoster={webImg} contestRegistrationLink={'https://forms.gle/3w2fkBMr7Y3qWxzg7'}/>
-            <ContestCard btnName={'Participate'} contestPoster={webImg} contestRegistrationLink={'https://forms.gle/3w2fkBMr7Y3qWxzg7'}/>
+            {
+                CONTESTS.map((curr, key) => <ContestCard key={key} contestPoster={curr.contestImage} contestRegistrationLink={curr.contestLink} btnName={'Participate'} />)
+            }
         </div>
     </section>
     )

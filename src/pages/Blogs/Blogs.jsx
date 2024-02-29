@@ -3,8 +3,10 @@ import React, { useEffect } from "react";
 import './Blogs.css';
 import BlogCard from "../../components/BlogCard/BlogCard";
 
-import img1 from '../../assets/What-is-M.Tech-in-Artificial-Intelligence_AI.jpg'
-import img2 from '../../assets/web.jpeg'
+import img1 from '../../assets/blog1.webp'
+import img2 from '../../assets/web.webp'
+import { BLOGS } from "../../data";
+
 export default function Blogs() {
     useEffect(() => {
         window.scroll(0, 0)
@@ -21,9 +23,9 @@ export default function Blogs() {
                 Have a look at our <span>community curated</span> blogs
             </div>
             <div className="blog-page-container">
-                <BlogCard blogTitle={'WHY AI IS NOT A THREAT TO HUMAN SOCIETY AND THE WORLD AT LARGE?'} blogTag={'AI'} blogImage={img1}/>
-                <BlogCard blogTitle={'HOW TO BECOME A WEB DEV ?'} blogTag={'WEB DEV'} blogImage={img2}/>
-                <BlogCard blogTitle={'AI : FRIEND OR FOE? DEBUNKING THE MYTH OF ARTIFICIAL INTELLIGENCE AS A THREAT TO SOCIETY?'} blogTag={'AI'} blogImage={''}/>
+                {
+                    BLOGS.map((curr, key) => <BlogCard key={key} blogTitle={curr.blogTitle} blogImage={curr.blogThumb} blogId={curr.blogId} blogTag={curr.blogTag} />)
+                }
             </div>
         </section>
     )

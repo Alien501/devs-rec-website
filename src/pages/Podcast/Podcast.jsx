@@ -6,6 +6,7 @@ import PodcastCard from "../../components/PodcastCard/PodcastCard";
 import YoutubeCard from "../../components/YoutubeCard/YoutubeCard";
 import LinkedinCard from "../../components/LinkedinCard/LinkedinCard";
 import BorderImage from "../../components/BorderImage/BorderImage";
+import { PODCASTS } from "../../data";
 
 export default function Podacast() {
     useEffect(() => {
@@ -22,9 +23,9 @@ export default function Podacast() {
                 Listen to the <span>community speaking</span> things related to tech and career
             </div>
             <div className="podcast-page-content-container">
-                <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/185K2NcNPQ04aTS4T5jM7t?utm_source=generator'} />
-                <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/7juTmneZuN82wVf53dYCiB?utm_source=generator'} />
-                <PodcastCard podcastEmbedLink={'https://open.spotify.com/embed/episode/3rwI3Y8YvIt2YxepmuCxD7?utm_source=generator'} />
+                {
+                    PODCASTS.map((curr, key) => <PodcastCard key={key} podcastEmbedLink={curr.podcastLink} />)
+                }
                 <BorderImage />
                 <h1>🏢 Career Talks 🏢</h1>
                 <YoutubeCard link={"https://www.youtube.com/embed/2DW6IHIVg_Y?si=O0sdVtc3T7sFgeNT"} />
