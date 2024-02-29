@@ -3,7 +3,7 @@ import React from "react";
 import './BlogCard.css';
 import LinkButton from "../LinkButton/LinkButton";
 
-import defaultimg from '../../assets/organic-flat-blog-post-illustration-with-people_23-2148955260.avif'
+import defaultimg from '/assets/organic-flat-blog-post-illustration-with-people_23-2148955260.avif'
 
 export default function BlogCard({blogImage, blogTag, blogTitle, blogId}) {
     return(

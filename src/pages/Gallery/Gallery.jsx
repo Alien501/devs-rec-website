@@ -2,13 +2,13 @@ import React, {useEffect} from "react";
 
 import './Gallery.css';
 
-import img1 from '../../assets/g1.jpg'
-import img2 from '../../assets/g2.jpg'
-import img3 from '../../assets/g3.jpg'
-import img4 from '../../assets/g4.jpg'
-import img5 from '../../assets/g5.jpg'
-import img6 from '../../assets/g6.jpg'
-import img7 from '../../assets/g7.jpg'
+import img1 from '/assets/g1.jpg'
+import img2 from '/assets/g2.jpg'
+import img3 from '/assets/g3.jpg'
+import img4 from '/assets/g4.jpg'
+import img5 from '/assets/g5.jpg'
+import img6 from '/assets/g6.jpg'
+import img7 from '/assets/g7.jpg'
 
 export default function Gallery() {
     useEffect(() => {

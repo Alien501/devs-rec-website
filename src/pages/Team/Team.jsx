@@ -2,10 +2,10 @@ import React, {useEffect} from "react";
 
 import './Team.css';
 
-import pres from '../../assets/president.jpeg';
-import vice from '../../assets/vice.jpg';
-import vice2 from '../../assets/vice2.jpg';
-import sec from '../../assets/sec.jpeg';
+import pres from '/assets/president.jpeg';
+import vice from '/assets/vice.jpg';
+import vice2 from '/assets/vice2.jpg';
+import sec from '/assets/sec.jpeg';
 
 import TeamCard from "../../components/TeamCard/TeamCard";
 

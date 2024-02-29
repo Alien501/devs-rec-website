@@ -15,7 +15,7 @@ const ANNOUNCEMENTS = [
 
 const BLOGS = [
     {
-        blogThumb: '/src/assets/blog1.webp',
+        blogThumb: '/assets/blog1.webp',
         blogTitle: 'WHY AI IS NOT A THREAT TO HUMAN SOCIETY AND THE WORLD AT LARGE?',
         blogContent: `
         Artificial Intelligence is one of the branch of computer science that can simulate human intelligence Artificial Intelligence (AI) has become a buzzword in recent years, often associated with dystopian visions of a world where machines take over and humans become obsolete. However, this perspective is not only unfounded but also contradicts the reality of AI. In fact, AI is not a threat to human society and the world at large. In this blog, we will explore why this is the case and debunk some of the myths surrounding AI.
@@ -31,7 +31,7 @@ const BLOGS = [
         blogId: 0
     },
     {
-        blogThumb: '/src/assets/web.webp',
+        blogThumb: '/assets/web.webp',
         blogTitle: 'HOW TO BECOME A WEB DEV ?',
         blogContent: `
         WEB WHAT IS THAT?
@@ -56,7 +56,7 @@ const BLOGS = [
         blogId: 1
     },
     {
-        blogThumb: '/src/assets/AI.webp',
+        blogThumb: '/assets/AI.webp',
         blogTitle: 'AI : FRIEND OR FOE? DEBUNKING THE MYTH OF ARTIFICIAL INTELLIGENCE AS A THREAT TO SOCIETY?',
         blogContent: `
         "AI is sometimes incorrectly framed as machines replacing humans. It’s not about machines replacing humans, but machines augmenting humans. In this technological driven society, Artificial intelligence is escalating at a booming rate taking over the IT sector at a rapid pace. Artificial intelligence is a field of computer science that involves building a model that can perform tasks that emulate human mind such as visual perception, speech recognition, decision-making, and language translation. AI involves the use of algorithms and statistical models to analyse and learn from data, and to make predictions or decisions based on that analysis. The example of various ai tools are Microsoft azure services, Open ai, Google cloud AI, Amazon Sage maker and Data robot etc. AI has a mammoth impact on humans and the society which could either benefit them or raise social and ethical issues. Some of the various domains it has affected include:
@@ -98,22 +98,22 @@ const PODCASTS = [
 
 const CONTESTS = [
     {
-        contestImage: 'src/assets/web-dev-contest.webp',
+        contestImage: '/assets/web-dev-contest.webp',
         contestLink: 'https://forms.gle/3w2fkBMr7Y3qWxzg7'
     },
     {
-        contestImage: 'src/assets/web-dev-contest.webp',
+        contestImage: '/assets/web-dev-contest.webp',
         contestLink: 'https://forms.gle/3w2fkBMr7Y3qWxzg7'
     },
 ]
 
 const EVENTS = [
     {
-        eventImage: 'src/assets/tech-xplore.webp',
+        eventImage: '/assets/tech-xplore.webp',
         eventLink: '#'
     },
     {
-        eventImage: 'src/assets/webinar-1.webp',
+        eventImage: '/assets/webinar-1.webp',
         eventLink: '#'
     },
 ]

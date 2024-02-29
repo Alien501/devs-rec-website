@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import './BlogView.css';
 
-import img1 from '../../assets/organic-flat-blog-post-illustration-with-people_23-2148955260.avif'
+import img1 from '/assets/organic-flat-blog-post-illustration-with-people_23-2148955260.avif'
 import ContactForm from "../ContactForm/ContactForm";
 import BorderImage from "../BorderImage/BorderImage";
 import { useParams } from "react-router-dom";

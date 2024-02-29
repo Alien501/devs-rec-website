@@ -3,8 +3,7 @@ import React, { useEffect } from "react";
 import './Blogs.css';
 import BlogCard from "../../components/BlogCard/BlogCard";
 
-import img1 from '../../assets/blog1.webp'
-import img2 from '../../assets/web.webp'
+
 import { BLOGS } from "../../data";
 
 export default function Blogs() {
