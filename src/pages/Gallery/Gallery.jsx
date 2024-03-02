@@ -19,7 +19,7 @@ export default function Gallery() {
         <section className="gallery-container">
             <div className="section-head">
                 <h1>
-                    🥂 Gallery 🥂
+                    📷 Gallery 📷
                 </h1>
             </div>
             <div className="section-explainer">
