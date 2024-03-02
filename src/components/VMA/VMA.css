@@ -1,6 +1,6 @@
 #about-outer-container {
     min-width: 50%;
-    max-width: 90%;
+    max-width: 295px;
     margin: 10px auto;
     padding: 5px;
     background-color: var(--color-violet);

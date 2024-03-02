@@ -71,9 +71,13 @@
 }
 
 /* Blog Section */
+
+
 .home-blog-container .link-button, .home-podcast-container .link-button{
     margin: 10px auto;
 }
+
+/* Podcast */
 
 .home-podcast-container .link-button {
     background-color: var(--color-red);

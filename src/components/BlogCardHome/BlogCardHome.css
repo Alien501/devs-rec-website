@@ -1,6 +1,6 @@
 .blog-card-home-container {
     min-width: 50%;
-    max-width: 95%;
+    max-width: 295px;
     margin: 10px auto;
     padding: 5px;
     background-color: var(--color-blue);
@@ -12,12 +12,29 @@
     transition: .3s;
     height: max-content;
     border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card-home-container::before {
+    content: '';
+    width: 30px;
+    height: 100%;
+    background-color: rgba(144, 144, 231, 0.343);
+    transform: skew(-20deg) translate3d(-20vw, 0, 0);
+    position: absolute;
+    transition: .5s ease;
+}
+
+.blog-card-home-container:hover.blog-card-home-container::before {
+    transform: skew(-20deg) translate3d(100vw, 0, 0);
+    transition: .2s ease-out;
 }
 
 .blog-card-home-container:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    background-color: var(--color-blue-2);
+    background-color: var(--color-violet);
 }
 
 .blog-card-home-content-container {
