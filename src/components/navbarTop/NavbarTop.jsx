@@ -34,6 +34,7 @@ export default function NavbarTop() {
             <div className={`nav-menu-container ${isNavClicked? 'active': ''}`}>
                 <Link to="/" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Home</Link>
                 <Link to="/blog" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Blogs</Link>
+                <Link to="/peer-to-peer" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Peer-to-Peer</Link>
                 <Link to="/podcast" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Podcasts</Link>
                 <Link to="/contest" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Contests</Link>
                 <Link to="/events" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Events</Link>

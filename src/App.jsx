@@ -15,6 +15,7 @@ import Team from './pages/Team/Team';
 import FAB from './components/FAB/FAB';
 import Footer from './components/Footer/Footer';
 import BlogView from './components/BlogView/BlogView';
+import PeerToPeer from './pages/p2p/p2p';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/contest' element={<Contest />}/>
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/team' element={<Team />}/>
+        <Route path='/peer-to-peer' element={<PeerToPeer />}/>
       </Routes>
 
       <FAB />
