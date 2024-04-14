@@ -19,7 +19,7 @@ export default function Blogs() {
                 </h1>
             </div>
             <div className="section-explainer">
-                Have a look at our <span>community curated</span> blogs
+                Have a look at our <span>community curated</span> blogs!
             </div>
             <div className="blog-page-container">
                 {

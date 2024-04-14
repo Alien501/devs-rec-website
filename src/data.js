@@ -1,13 +1,13 @@
 
 const ANNOUNCEMENTS = [
     {
-        announcementTitle: 'Regarding Recruitment',
-        announcementContent: 'Recruitments open for academi year 2024-2025! Click link below for more info!',
+        announcementTitle: 'REC Companion',
+        announcementContent: 'Launching Soon!',
         announcementLink: '#'
     },
     {
-        announcementTitle: 'Submission Extended',
-        announcementContent: 'Submission date for website design had been extended till 04-03-2024. Have a great coding!. Click link below for more information',
+        announcementTitle: 'Peer-To-Peer',
+        announcementContent: 'Coming Soon!',
         announcementLink: '#'
     }
 ]
@@ -16,7 +16,7 @@ const ANNOUNCEMENTS = [
 const BLOGS = [
     {
         blogThumb: '/assets/blog1.webp',
-        blogTitle: 'WHY AI IS NOT A THREAT TO HUMAN SOCIETY AND THE WORLD AT LARGE?',
+        blogTitle: 'Why is AI not a threat to human society and the world at large?',
         blogContent: `
         Artificial Intelligence is one of the branch of computer science that can simulate human intelligence Artificial Intelligence (AI) has become a buzzword in recent years, often associated with dystopian visions of a world where machines take over and humans become obsolete. However, this perspective is not only unfounded but also contradicts the reality of AI. In fact, AI is not a threat to human society and the world at large. In this blog, we will explore why this is the case and debunk some of the myths surrounding AI.
 

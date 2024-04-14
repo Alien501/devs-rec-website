@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import './BlogCardHome.css';
+import Aos from "aos";
 
 export default function BlogCardHome({blogTitle, blogDomain, blogId}) {
     return(
         <div className="blog-card-home-container">
-            <div className="blog-card-home-content-container">
+            <div data-aos="fade-right"  className="blog-card-home-content-container">
                 <div className="blog-card-home-title-container">
                     {blogTitle}
                 </div>
-                <div className="blog-card-home-tag-container">
+                <div data-aos="fade-up"  className="blog-card-home-tag-container">
                     <span>{blogDomain}</span>
                 </div>
             </div>

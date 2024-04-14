@@ -7,7 +7,7 @@ import defaultimg from '/assets/organic-flat-blog-post-illustration-with-people_
 
 export default function BlogCard({blogImage, blogTag, blogTitle, blogId}) {
     return(
-        <div className="blog-card-container">
+        <div data-aos="fade-right" className="blog-card-container">
             <div className="blog-image-container">
                 <img src={blogImage || defaultimg} alt="" className="blog-image" />
             </div>

@@ -4,7 +4,7 @@ import './ContestCard.css';
 
 export default function ContestCard({contestPoster, contestRegistrationLink, btnName}) {
     return(
-        <div className="contest-card-container">
+        <div data-aos="flip-up" className="contest-card-container">
             <div className="contest-card-image-container">
                 <img src={contestPoster} className="contest-poster" />
             </div>

@@ -23,7 +23,7 @@ export default function Team() {
                 </h1>
             </div>
             <div className="section-explainer">
-                These are our <span>vibrant team</span> members who who makes all these possible
+                These are our <span>vibrant team</span> members who make all this possible
             </div>
             <div className="podcast-page-content-container">
                 <TeamCard photo={pres} name={'Swayam S'} role={'President'} s1={'https://github.com/swayammedia'} s2={'https://www.linkedin.com/in/devswayam/'} s3={'https://instagram.com/swayam_ceo?igshid=ZDdkNTZiNTM='}/>

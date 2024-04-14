@@ -4,7 +4,7 @@ import './AnnouncementCard.css';
 
 export default function AnnouncementCard({annTitle, annBrief, annLink}) {
     return(
-        <div className="announcement-card-container">
+        <div data-aos="fade-up" className="announcement-card-container">
             <div className="announcement-card-title">
                 {annTitle}
             </div>

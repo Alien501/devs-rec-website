@@ -4,10 +4,9 @@
     right: 5%;
     width: 90%;
     height: 100px;
-    top: 0;
+    top: 10px;
     overflow: hidden;
     background-color: var(--color-black);
-    margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px var(--color-shadow);
     display: flex;
@@ -45,13 +44,12 @@
 
 .nav-top-icon-container:hover, .nav-top-icon-container:active {
     background-color: #ffffff49;
-    /* color: var(--color-black); */
     cursor: pointer;
 }
 
-.nav-top-icon-container:hover svg {
+/* .nav-top-icon-container:hover svg {
     transform: rotate(180deg);
-}
+} */
 
 .nav-menu-container{
     width: 90%;

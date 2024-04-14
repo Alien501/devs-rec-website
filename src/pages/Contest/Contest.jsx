@@ -18,7 +18,7 @@ export default function Contest() {
             </h1>
         </div>
         <div className="section-explainer">
-            Compete with the <span>community</span> for fun
+            Compete with the <span>community</span> for fun!
         </div>
         <div className="contest-cards-container">
             {

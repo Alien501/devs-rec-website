@@ -47,7 +47,7 @@ export default function ContactForm() {
     }
 
     return(
-        <div className="contact-form-container">
+        <div data-aos="fade-up" className="contact-form-container">
             <form className="my-form">
                 <input onChange={onChange} value={formData.name} type="text" name="name" id="name" placeholder="Your Name" required />
                 <input onChange={onChange} value={formData.email} type="email" name="email" id="email" placeholder="Your Email" required />

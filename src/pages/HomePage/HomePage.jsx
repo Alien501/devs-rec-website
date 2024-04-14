@@ -31,7 +31,7 @@ export default function HomePage() {
                     </h1>
                 </div>
                 <div className="section-explainer">
-                    See <span>latest update</span> in club
+                    See the <span>latest updates</span> from the club!
                 </div>
                 <div className="ann-card-container">
                     {
@@ -49,7 +49,7 @@ export default function HomePage() {
                     </h1>
                 </div>
                 <div className="section-explainer">
-                    Have a look at our <span>community curated</span> blogs
+                    Have a look at our <span>community curated</span> blogs!
                 </div>
                 <div className="blog-home-container">
                     {
@@ -68,7 +68,7 @@ export default function HomePage() {
                     </h1>
                 </div>
                 <div className="section-explainer">
-                    Listen to the <span>community speaking</span> things related to tech
+                    Listen to the <span>community sharing</span> things related to technology and careers
                 </div>
                 <div className="podcast-home-container">
                     {

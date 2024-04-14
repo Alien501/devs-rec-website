@@ -22,7 +22,7 @@ export default function VMA() {
     }
 
     return(
-        <div id="about-outer-container">
+        <div data-aos="flip-left" id="about-outer-container">
             <div className="about-menu-container">
                 <a onClick={(event) => onClick(event, 0)} className={`about-tab-button ${currentActive==0? 'active': ''}`}>Vision</a>
                 <a onClick={(event) => onClick(event, 1)} className={`about-tab-button ${currentActive==1? 'active': ''}`}>Mission</a>

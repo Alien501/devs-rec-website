@@ -64,6 +64,6 @@
     border-color: var(--color-grey);
 }
 
-.query-card-container:hover .query-card-icon svg {
+.query-card-icon.active svg {
     transform: rotateZ(45deg);
 }

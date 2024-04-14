@@ -26,26 +26,35 @@ export default function Gallery() {
                  <span>Moments to Remember</span> 
             </div>
             <div className="gallery-cards-container">
-                <div className="gallery-image-container">
-                    <img src={img1} className="gallery-image" />
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/6.webp' className="gallery-image" />
                 </div>
-                <div className="gallery-image-container">
+                <div data-aos="zoom-in" className="gallery-image-container">
                     <img src={img2} className="gallery-image" />
                 </div>
-                <div className="gallery-image-container">
+                <div data-aos="zoom-in" className="gallery-image-container">
                     <img src={img3} className="gallery-image" />
                 </div>
-                <div className="gallery-image-container">
-                    <img src={img4} className="gallery-image" />
-                </div>
-                <div className="gallery-image-container">
+                <div data-aos="zoom-in" className="gallery-image-container">
                     <img src={img5} className="gallery-image" />
                 </div>
-                <div className="gallery-image-container">
-                    <img src={img6} className="gallery-image" />
-                </div>
-                <div className="gallery-image-container">
+                <div data-aos="zoom-in" className="gallery-image-container">
                     <img src={img7} className="gallery-image" />
+                </div>
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/1.webp' className="gallery-image" />
+                </div>
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/2.webp' className="gallery-image" />
+                </div>
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/3.webp' className="gallery-image" />
+                </div>
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/4.webp' className="gallery-image" />
+                </div>
+                <div data-aos="zoom-in" className="gallery-image-container">
+                    <img src='assets/5.webp' className="gallery-image" />
                 </div>
             </div>
         </section>

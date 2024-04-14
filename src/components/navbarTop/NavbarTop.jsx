@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from '/assets/devs-white.png'
@@ -9,10 +9,9 @@ import './NavbarTop.css';
 export default function NavbarTop() {
     const [isNavClicked, setIsNavClicked] = useState(false);
 
-
     return(
         <>
-            <header className="nav-top-container">
+            <header className='nav-top-container'>
                 <div className="nav-top-left-contanier">
                     <img src={logo} alt="Club Logo" className="logo-container"/>
                 </div>
@@ -34,7 +33,7 @@ export default function NavbarTop() {
             <div className={`nav-menu-container ${isNavClicked? 'active': ''}`}>
                 <Link to="/" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Home</Link>
                 <Link to="/blog" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Blogs</Link>
-                <Link to="/peer-to-peer" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Peer-to-Peer</Link>
+                <Link to="/peer-to-peer" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">P2P Hub</Link>
                 <Link to="/podcast" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Podcasts</Link>
                 <Link to="/contest" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Contests</Link>
                 <Link to="/events" onClick={() => setIsNavClicked(prev => !prev)} className="nav-menu poppins-medium">Events</Link>

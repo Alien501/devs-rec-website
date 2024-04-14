@@ -1,6 +1,5 @@
 
-import { Routes } from 'react-router-dom';
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 
@@ -16,8 +15,17 @@ import FAB from './components/FAB/FAB';
 import Footer from './components/Footer/Footer';
 import BlogView from './components/BlogView/BlogView';
 import PeerToPeer from './pages/p2p/p2p';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, [])
+
   return (
     <>
       <NavbarTop />
@@ -32,6 +40,7 @@ function App() {
         <Route path='/gallery' element={<Gallery />}/>
         <Route path='/team' element={<Team />}/>
         <Route path='/peer-to-peer' element={<PeerToPeer />}/>
+        <Route path='/*' element={<PageNotFound />}/>
       </Routes>
 
       <FAB />

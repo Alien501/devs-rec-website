@@ -20,7 +20,7 @@ export default function Podacast() {
                 </h1>
             </div>
             <div className="section-explainer">
-                Listen to the <span>community speaking</span> things related to tech and career
+            Listen to the <span>community sharing</span> things related to technology and careers
             </div>
             <div className="podcast-page-content-container">
                 {
